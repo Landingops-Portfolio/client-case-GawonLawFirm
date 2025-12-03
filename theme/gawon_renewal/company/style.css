@@ -1,0 +1,142 @@
+.about > *,
+.history > *{
+    user-select: none;
+}
+
+/*변호사 소개*/
+.about{}
+
+.about > ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.about > ul li{
+    position: relative;
+}
+
+.about > ul li p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #2a1616;
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.about > ul li .name{
+    position: absolute;
+    bottom: -70px;
+    right: 0px;
+}
+
+.about > ul li .name ul{
+    display: flex;
+    align-items: center;
+}
+.about > ul li .name ul li{
+    font-size: 18px;
+    font-weight: 600;
+    color: #2a1616;
+    margin: 0px 10px;
+    white-space: nowrap;
+}
+
+.about > ul li .top{
+    float: right;
+}
+
+.certificate{
+    margin: 50px 0px;
+}
+
+.certificate ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.certificate ul li{
+    width: 100%;
+}
+
+.certificate ul li img{
+    width: 100%;
+}
+@media (max-width: 1200px){
+    .about > ul li p br{
+        display: none;
+    }
+} 
+@media (max-width: 1200px){
+    .about > ul{
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+    .about > ul li:nth-child(2){
+        order: -1;
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about > ul li .name{
+        position: sticky;
+        float: right;
+    }
+} 
+@media (max-width: 600px){
+    .about > ul li img{
+        width: 100%;
+    }
+}
+@media (max-width: 499px){
+    .about > ul li p{
+        font-size: 14px;
+    }
+}
+/*주요약력*/
+.history{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px 0px;
+}
+
+.history div{
+    padding-left: 25px;
+}
+
+.history ul{
+    list-style: disc;
+}
+.history ul li{
+    font-size: 18px;
+    font-weight: 600;
+    color: #2a1616;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+
+
+@media (max-width: 800px){
+    .history{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 499px){
+    .history ul li{
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
